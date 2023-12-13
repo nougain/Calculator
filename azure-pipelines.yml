@@ -13,7 +13,7 @@ variables:
   # Either AutoVersion to generate a build number or CurrentVersion to match the project.json version.
   versioningStrategy: AutoVersion
   # The orchestrator tenant to deploy to. Not used, but may be useful if deploying to multiple tenants.
-  tenant: DEV
+  tenant: DefaultTenant
   # The environments to update the package version to the deployed version. 
   # Not required for modern folders or if you do not want to update the package version.
   environments: ''
@@ -38,8 +38,8 @@ resources:
   repositories:
     - repository: templates
       type: github  # use 'git' for a repo hosted in Azure DevOps
-      endpoint: rpabotsworld
-      name: rpabotsworld/UiPath-Azure-Devops 
+      endpoint: nougain
+      name: nougain/UiPathAzureDevOps 
 
 # Use the above specified template for your project. 
 extends:
